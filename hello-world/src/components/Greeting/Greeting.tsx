@@ -1,19 +1,19 @@
-import PropTypes from 'prop-types';
-import './Greeting.css';
+import {useState} from "react";
 
 const Greeting = (props) => {
 
+  let [currentName, setCurrentName] = useState(props.name);
+
+  const changeName = () => {
+    setCurrentName("James");
+  }
+
   return (
     <div>
-      <p className="greeting_text"> Hello {props.name}. You are {props.age} years old. </p>
+      <p className="greeting_text"> Hello {currentName}. You are {props.age} years old. </p>
+      <button onClick={changeName} >change my name</button>
     </div>
   );
 }
-
-Greeting.propTypes = {
-  name: PropTypes.string.isRequired,
-  age: PropTypes.string.isRequired,
-};
-
 
 export default Greeting;
