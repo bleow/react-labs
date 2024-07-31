@@ -18,7 +18,7 @@ Components sit in javascript files, however with a typical application containin
 
 2. **Create a new folder** under the components folder called "Greeting".
 
-3. **Create a new file** in the Greeting folder called "Greeting.jsx". Components always start with an uppercase letter and it is convention to name the file with the same name as the component it contains. The files must have the .jsx extension.
+3. **Create a new file** in the Greeting folder called "Greeting.tsx". Components always start with an uppercase letter and it is convention to name the file with the same name as the component it contains. The files must have the .jsx extension.
 
 4. Create the outline of a **regular javascript function** in the Greeting.js file. The function should be called Greeting. You should also make it the default export function for the file.
  
@@ -142,7 +142,7 @@ export default App;
 
 ## 4. Style the component
 
-1. **Create a file** called "Greeting.css" in the same folder as the Greeting.jsx file.
+1. **Create a file** called "Greeting.css" in the same folder as the Greeting.tsx file.
 
 2. **Define a css class** within this file that sets the text colour to red.
 
@@ -166,7 +166,7 @@ Greeting.css
 }
 ```
 
-Greeting.jsx
+Greeting.tsx
 ```
 import './Greeting.css';
 import PropTypes from 'prop-types';
